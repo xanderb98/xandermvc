@@ -1,0 +1,13 @@
+{
+    "name": "xander/xander-mvc",
+    "authors": [
+        {
+            "name": "Xander Beijeman",
+            "email": "x.beijeman@gmail.com"
+        }
+    ],
+    "require": {
+        "aura/sql": "~2.4|~3.0",
+        "symfony/polyfill-ctype": "^1.9"
+    }
+}
