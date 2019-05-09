@@ -21,9 +21,9 @@ abstract class AbstractModel
     public function __construct()
     {
         $this->pdo = new ExtendedPdo(
-                'mysql:host=localhost;dbname=test',
-                '',
-                '');
+                'mysql:host='. $_ENV["DB_HOST"] .';dbname='. $_ENV["DB_NAME"],
+                $_ENV['DB_USERNAME'],
+                $_ENV['DB_PASSWORD']);
     }
 
     public function getById(int $id): array
